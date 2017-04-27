@@ -1,0 +1,5 @@
+class MenController < ApplicationController
+  def jeans
+	@products =  Product.where(product.price > 1000)
+  end
+end

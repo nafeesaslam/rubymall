@@ -1,0 +1,118 @@
+.cart_image{
+	background-image:url('ca.png');
+	height:40px;
+	width:40px;
+	margin-top:50%;border:1px solid #ff8080;border-radius:5px;-webkit-background-size: cover;
+       -moz-background-size: cover;
+        background-size: cover;
+       -o-background-size: cover;
+}
+
+
+.pagination{
+	height:50px;
+	width:100%;
+	
+}
+
+.image_at_cart{
+	height:60px;
+	width:60px;
+	border:1px solid #ff8080;border-radius:5px; 
+}
+
+
+
+.cart_link{
+	height:42px;
+	width:42px;
+	float:left;margin-left:10%;margin-top:0%;
+	background-image:url('cart1.png');
+	border-radius:5px;-webkit-background-size: cover;
+       -moz-background-size: cover;
+        background-size: cover;
+       -o-background-size: cover;
+	
+}
+.cartarea{
+	
+	height:auto;
+	width:200px;background-color:#DEDEDE;
+	float:left;margin-right:57%;border:1px solid #ff8080;
+	border-radius:5px;-webkit-background-size: cover;
+       -moz-background-size: cover;
+        background-size: cover;
+       -o-background-size: cover;
+}
+
+#cart_base{
+	width:100%;
+	height:auto;float:right;margin-left:0%; box-shadow: 0 5px 10px rgba(0, 0, 0, .2);border-top:
+1px dotted #ff8080;
+border-bottom: 1px dotted #ff8080;
+}
+
+.remove_item_at_cart{
+	background-image:url('close.png');height:22px;width:22px;border:1px solid #ff8080;border-radius:5px;
+}
+
+.base_price_at_cart{
+	width:100%;float:left;margin-left:0%; box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.total_cell{
+
+}
+
+#cart_base_last{
+	width:100%;
+	height:auto;position:absolute;z-index:10;
+}
+
+#notice {
+		
+        color: #ff8080;
+	font-size:20px;
+	
+}
+
+.great_text{
+	font-size:60px;
+	text-align:center;
+	margin-top:0%;padding-top:-20px;
+}
+
+.content-mid{
+	margin-top:15 auto;
+}
+
+.cart box_2{
+	height:80px;
+	width:200px;
+	padding-bottom:50px;margin-right:50%;
+	position:absolute;overflow:hidden;
+	border:1px solid green;
+	
+}
+
+.pseudo_cart_font{
+	font-size:14px;
+	color:#ff8080;
+}
+
+.logos{
+	background-image:url('logo.png');
+	height:150px;
+	width:150px;
+}
+
+#head-show{
+	background-image: url('Shopping-Wallpapers-5.jpg');
+	width:100%;
+	height:300px;
+	opacity:0.3;
+	-webkit-background-size: cover;
+       -moz-background-size: cover;
+        background-size: cover;
+       -o-background-size: cover;
+}

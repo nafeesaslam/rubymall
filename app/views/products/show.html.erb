@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopin A Ecommerce Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+
+
+</head>
+<div id="head-show">
+	
+</div>
+<p id="notice"><%= notice %></p>
+<div class="single">
+
+<div class="container">
+<div class="col-md-9">
+	<div class="col-md-5 grid">		
+		<div class="flexslider">
+			  <ul class="slides">
+			    <%= image_tag @product.image.url %>
+		</div>
+	</div>	
+<div class="col-md-7 single-top-in">
+						<div class="span_2_of_a1 simpleCart_shelfItem">
+				<h3><%= @product.name %> (<%= @product.brand %>)</h3>
+				<p class="in-para"> <%= @product.subcategory %></p>
+			    <div class="price_single">
+				  <span class="reducedfrom item_price">&#8377; <%= @product.price %></span>
+				 
+				 <div class="clearfix"></div>
+				</div>
+				<h4 class="quick">Quick Overview:</h4>
+				<p class="quick_desc"> <%= @product.description %></p>
+			    <div class="wish-list">
+				 	<ul>
+				 		<li class="wish"><a href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>Add to Wishlist</a></li>
+				 	    <li class="compare"><a href="#"><span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span>Add to Compare</a></li>
+				 	</ul>
+				 </div>
+				 <div class="quantity">
+					 
+					
+							</div>
+							<!--quantity-->
+	
+	<!--quantity--><span class="glyphicon glyphicon-thumbs-up" onClick="incrementlikes()">  </span>
+<span style="margin-left:5px;">    </span>
+				<span class="glyphicon glyphicon-thumbs-down"> </span>
+				 
+			    <%= button_to 'Add to cart' , line_items_path(:product_id => @product), :class => 'add-to item_add hvr-skew-backward' %>
+			<div class="clearfix"> </div>
+			</div>
+		
+					</div>
+			<div class="clearfix"> </div>
+			<!---->
+			<div class="tab-head">
+			 
+		 
+                <%= link_to 'Back', root_path, :class => "btn btn-default" %>
+			</div>
+

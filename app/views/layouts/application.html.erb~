@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App2</title>
+	<head>	
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+        <script src="http://ajx.googleapis.com/ajax/libs/angular/js/1.5.0/angular.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<style> .glyphicon-thumbs-up { cursor:pointer } </style>
+	</head>
+<body>
+
+
+	
+<%= yield %>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/simpleCart.min.js"> </script>
+<!-- slide -->
+<script src="js/bootstrap.min.js"></script>
+<!--light-box-files -->
+		<script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files -->
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('a.picture').Chocolat();
+		});
+		</script>
+
+</body>
+</html>

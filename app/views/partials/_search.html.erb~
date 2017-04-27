@@ -1,0 +1,8 @@
+
+		
+					<div class="cart box_1">
+						<%= link_to '', carts_path, :class => "simpleCart_total" %>
+						<img src = "assets/cart.png">
+						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+
+					</div>

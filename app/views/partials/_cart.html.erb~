@@ -1,0 +1,6 @@
+
+<p class="pseudo_cart_font">Total = &#8377 <%= (@cart.total_price) %></p>
+<%= link_to 'Empty cart' , @cart, :method => :delete,
+:confirm => 'Are you sure?',:class => 'pseudo_cart_font' %>
+
+

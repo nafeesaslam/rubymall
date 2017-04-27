@@ -1,0 +1,46 @@
+
+<div id="cart_base" >
+<center><p id="notice"><%= notice %></p></center>
+<table>
+ <thead>
+    <tr>
+      <th></th>
+      <th style="text-align:center;">Name</th>
+      <th></th>
+	<th style="text-align:center;">Qty</th>
+	<th style="text-align:right;">Price</th>
+	<th style="text-align:right;">Total</th>
+    </tr>
+  </thead>
+
+<% @cart.line_items.each do |item| %>
+<tr>
+<td><%= image_tag item.product.image.url, :class => "image_at_cart" %></td>
+<td style="text-align:center;color:red;"><%= item.product.name.upcase %></td>
+<td>&times;</td>
+<td style="text-align:center;color:red;">
+<%=select_tag "", options_for_select((1..item.quantity).to_a item.quantity) %>
+
+
+</td>
+<td style="text-align:right;color:red;">&#8377 <%= item.product.price %></td>
+<td style="text-align:right;color:red;">&#8377 <%= item.total_price %></td>
+<td><%= button_to '', item, :method => :delete, :confirm => 'Are you sure?', :class => "remove_item_at_cart" %><td>
+</tr>
+<% end %>
+
+
+
+
+<tr>
+<td style="color:red;">Grand Total  =</td>
+<td style="color:red;">&#8377 <%= (@cart.total_price) %></td>
+</tr>
+
+</table>
+<%= button_to 'Shop More' , products_path, :method => :get, :class => "add-to item_add hvr-skew-backward"%>
+<%= button_to 'CheckOut' , new_order_path, :method => :get, :class => "add-to item_add hvr-skew-backward"%>
+<%= button_to 'Empty cart' , @cart, :method => :delete,
+:confirm => 'Are you sure?', :class => "add-to item_add hvr-skew-backward"%>
+</div>
+

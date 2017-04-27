@@ -1,0 +1,25 @@
+
+<center><p id="notice"><%= notice %></p></center>
+<table>
+ <thead>
+    <tr>
+      <th></th>
+      <th style="text-align:center;">Name</th>
+      <th></th>
+	<th style="text-align:center;">Qty</th>
+	<th style="text-align:right;">Price</th>
+	<th style="text-align:right;">Total</th>
+    </tr>
+  </thead>
+
+<% @cart.line_items.each do |item| %>
+<tr>
+<td><%= image_tag item.product.image.url, :class => "image_at_cart" %></td>
+<td style="text-align:center;"><%= item.product.name.upcase %></td>
+<td>&times;</td>
+<td style="text-align:center;"><%= item.quantity %></td>
+<td style="text-align:right;">&#8377 <%= item.product.price %></td>
+<td style="text-align:right;">&#8377 <%= item.total_price %></td>
+<td><%= button_to '', item, :method => :delete, :confirm => 'Are you sure?', :class => "remove_item_at_cart" %><td>
+</tr>
+<% end %>

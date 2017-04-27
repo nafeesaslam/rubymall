@@ -1,0 +1,10 @@
+class LineItem < ActiveRecord::Base
+  belongs_to :product
+  belongs_to :cart
+  belongs_to :order
+  def total_price
+	self.product.price  ||= 0.0 
+ 	product.price * quantity
+  end
+QUANTITY_FOR_CART=['1','2','3','4','5']
+end

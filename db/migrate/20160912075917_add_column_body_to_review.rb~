@@ -1,0 +1,4 @@
+class AddColumnBodyToReview < ActiveRecord::Migration
+  def change
+  end
+end

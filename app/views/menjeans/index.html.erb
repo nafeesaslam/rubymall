@@ -1,0 +1,40 @@
+<div class="content-mid">
+				<h3>Trending Items</h3>
+				
+				<label class="line"></label>
+				 
+				<div class="mid-popular">
+					<% @products.each do |product| %>
+					<div class="col-md-3 item-grid simpleCart_shelfItem">
+					<div class=" mid-pop">
+					<div class="pro-img">
+						<%= image_tag product.image.url, :class => "img-responsive" %>
+						
+						
+						</div>
+						<div class="mid-1">
+						<div class="women">
+						<div class="women-top">
+							<span><%= product.brand %></span>
+							<h6><%= link_to 'Learn More..', product, :class => 'btn btn-default' %></h6>
+							</div>
+							<div class="img item_add">
+								<%= button_to '' , line_items_path(:product_id => product), :class => 'cart_image' %>
+							</div>
+							<div class="clearfix"></div>
+							</div>
+							<div class="mid-2">
+								<p ><em class="item_price">&#8377; <%= product.price %></em></p>
+								  <div class="block">
+									<div class="starbox small ghosting"> </div>
+								</div>
+								
+								<div class="clearfix"></div>
+							</div>
+							
+						</div>
+					</div>
+					
+					</div>
+					<% end %>
+				
