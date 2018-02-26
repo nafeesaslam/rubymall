@@ -59,8 +59,6 @@ group :development do
   #gem 'rmagick'
   gem 'mini_magick' 
   gem 'kaminari'
-
-  gem 'devise'
   #gem 'number_to_indian_currency', '~> 1.0', '>= 1.0.6'
 end
 
