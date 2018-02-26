@@ -1,5 +1,5 @@
 <!--header-->
-<div class="header">
+<div class="header" style="position: fixed; z-index: 1000;">
 <div class="container">
 		<div class="head">
 			<div class=" logo">
@@ -188,6 +188,7 @@
 			<li><a class="color4" href="404.html">About</a></li>
             <li><a class="color5" href="typo.html">Short Codes</a></li>
             <li ><a class="color6" href="contact.html">Contact</a></li>
+            <li style="float: left"><span><%= render @cart %></span></li>
         </ul>
      </div><!-- /.navbar-collapse -->
 
@@ -200,7 +201,7 @@
 
 
 
-		<span><%= render @cart %></span>
+		
 	</div>
 					<div class="clearfix"> </div>
 										<!---pop-up-box---->
@@ -238,6 +239,7 @@
 		</div>
 	</div>
 </div>
+<div class="clearfix" style="height: 200px;"></div>
 
         <div class="content-mid">
 
