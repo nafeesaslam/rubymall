@@ -33,9 +33,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'sqlite3', group: [:development, :test]
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+
+  gem 'rails_12factor'
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,7 +59,7 @@ group :development do
   #gem 'rmagick'
   gem 'mini_magick' 
   gem 'kaminari'
-  gem 'activeadmin', '~> 1.0.0.pre1'
+  gem 'activeadmin'
   gem 'devise'
   #gem 'number_to_indian_currency', '~> 1.0', '>= 1.0.6'
 end
