@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   
   get 'menjeans/index'
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-  resources :orders
+  
  
   resources :line_items
   resources :carts
